@@ -13,7 +13,7 @@ export class LeftPage1Component implements OnInit {
   }
 
   onLeftClick() {
-    this.router.navigate([{ outlets: { primary: ['left2', '123'] } }], { relativeTo: this.route });
+    this.router.navigate([{ outlets: { primary: ['left2', '123'] } }], { relativeTo: this.route.parent });
   }
 
 }

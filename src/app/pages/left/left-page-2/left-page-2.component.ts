@@ -21,7 +21,7 @@ export class LeftPage2Component implements OnInit {
   onLeftClick() {
 
     // FIXME I want to navigate back to left1
-    this.router.navigate([{ outlets: { primary: ['left1'] } }], { relativeTo: this.route.parent });
+    this.router.navigate([{ outlets: { primary: ['app', 'left1'] } }], { relativeTo: this.route.parent });
   }
 
 }

@@ -14,7 +14,7 @@ export class RightPage1Component implements OnInit {
 
   onRightClick() {
     // FIXME I want to navigate to right2
-    this.router.navigate([{ outlets: { right: ['right2'] } }], { relativeTo: this.route.parent });
+    this.router.navigate([{ outlets: { right: ['right2'] } }], { relativeTo: this.route.root });
   }
 
 }
